@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18C278E62A77D1DF00F1F0AE /* SleepingIOSAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C278E52A77D1DF00F1F0AE /* SleepingIOSAppApp.swift */; };
-		18C278E82A77D1DF00F1F0AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C278E72A77D1DF00F1F0AE /* ContentView.swift */; };
+		18C278E62A77D1DF00F1F0AE /* SleepingIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C278E52A77D1DF00F1F0AE /* SleepingIOSApp.swift */; };
 		18C278EA2A77D1E000F1F0AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C278E92A77D1E000F1F0AE /* Assets.xcassets */; };
 		18C278ED2A77D1E000F1F0AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C278EC2A77D1E000F1F0AE /* Preview Assets.xcassets */; };
+		18C278F52A77D20B00F1F0AE /* Glaip in Frameworks */ = {isa = PBXBuildFile; productRef = 18C278F42A77D20B00F1F0AE /* Glaip */; };
+		18C278FA2A77D28C00F1F0AE /* WalletButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C278F92A77D28C00F1F0AE /* WalletButtonView.swift */; };
+		18C278FC2A77D2D200F1F0AE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C278FB2A77D2D200F1F0AE /* LoginView.swift */; };
+		18C278FE2A77D34300F1F0AE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C278FD2A77D34300F1F0AE /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18C278E22A77D1DF00F1F0AE /* SleepingIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepingIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18C278E52A77D1DF00F1F0AE /* SleepingIOSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepingIOSAppApp.swift; sourceTree = "<group>"; };
-		18C278E72A77D1DF00F1F0AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18C278E22A77D1DF00F1F0AE /* SleepingIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepingIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C278E52A77D1DF00F1F0AE /* SleepingIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepingIOSApp.swift; sourceTree = "<group>"; };
 		18C278E92A77D1E000F1F0AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18C278EC2A77D1E000F1F0AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18C278F92A77D28C00F1F0AE /* WalletButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletButtonView.swift; sourceTree = "<group>"; };
+		18C278FB2A77D2D200F1F0AE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		18C278FD2A77D34300F1F0AE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C278F52A77D20B00F1F0AE /* Glaip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +49,7 @@
 		18C278E32A77D1DF00F1F0AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18C278E22A77D1DF00F1F0AE /* SleepingIOSApp.app */,
+				18C278E22A77D1DF00F1F0AE /* SleepingIOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +57,8 @@
 		18C278E42A77D1DF00F1F0AE /* SleepingIOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				18C278E52A77D1DF00F1F0AE /* SleepingIOSAppApp.swift */,
-				18C278E72A77D1DF00F1F0AE /* ContentView.swift */,
+				18C278E52A77D1DF00F1F0AE /* SleepingIOSApp.swift */,
+				18C278F62A77D25000F1F0AE /* Scene */,
 				18C278E92A77D1E000F1F0AE /* Assets.xcassets */,
 				18C278EB2A77D1E000F1F0AE /* Preview Content */,
 			);
@@ -67,12 +73,38 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		18C278F62A77D25000F1F0AE /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				18C278F82A77D26200F1F0AE /* Profile */,
+				18C278F72A77D25800F1F0AE /* Login */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		18C278F72A77D25800F1F0AE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				18C278F92A77D28C00F1F0AE /* WalletButtonView.swift */,
+				18C278FB2A77D2D200F1F0AE /* LoginView.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		18C278F82A77D26200F1F0AE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				18C278FD2A77D34300F1F0AE /* ProfileView.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18C278E12A77D1DF00F1F0AE /* SleepingIOSApp */ = {
+		18C278E12A77D1DF00F1F0AE /* SleepingIOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18C278F02A77D1E000F1F0AE /* Build configuration list for PBXNativeTarget "SleepingIOSApp" */;
+			buildConfigurationList = 18C278F02A77D1E000F1F0AE /* Build configuration list for PBXNativeTarget "SleepingIOS" */;
 			buildPhases = (
 				18C278DE2A77D1DF00F1F0AE /* Sources */,
 				18C278DF2A77D1DF00F1F0AE /* Frameworks */,
@@ -82,9 +114,12 @@
 			);
 			dependencies = (
 			);
-			name = SleepingIOSApp;
+			name = SleepingIOS;
+			packageProductDependencies = (
+				18C278F42A77D20B00F1F0AE /* Glaip */,
+			);
 			productName = SleepingIOSApp;
-			productReference = 18C278E22A77D1DF00F1F0AE /* SleepingIOSApp.app */;
+			productReference = 18C278E22A77D1DF00F1F0AE /* SleepingIOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 18C278DD2A77D1DF00F1F0AE /* Build configuration list for PBXProject "SleepingIOSApp" */;
+			buildConfigurationList = 18C278DD2A77D1DF00F1F0AE /* Build configuration list for PBXProject "SleepingIOS" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,11 +146,14 @@
 				Base,
 			);
 			mainGroup = 18C278D92A77D1DF00F1F0AE;
+			packageReferences = (
+				18C278F32A77D20B00F1F0AE /* XCRemoteSwiftPackageReference "Glaip" */,
+			);
 			productRefGroup = 18C278E32A77D1DF00F1F0AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18C278E12A77D1DF00F1F0AE /* SleepingIOSApp */,
+				18C278E12A77D1DF00F1F0AE /* SleepingIOS */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C278E82A77D1DF00F1F0AE /* ContentView.swift in Sources */,
-				18C278E62A77D1DF00F1F0AE /* SleepingIOSAppApp.swift in Sources */,
+				18C278FE2A77D34300F1F0AE /* ProfileView.swift in Sources */,
+				18C278FA2A77D28C00F1F0AE /* WalletButtonView.swift in Sources */,
+				18C278FC2A77D2D200F1F0AE /* LoginView.swift in Sources */,
+				18C278E62A77D1DF00F1F0AE /* SleepingIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +360,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18C278DD2A77D1DF00F1F0AE /* Build configuration list for PBXProject "SleepingIOSApp" */ = {
+		18C278DD2A77D1DF00F1F0AE /* Build configuration list for PBXProject "SleepingIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18C278EE2A77D1E000F1F0AE /* Debug */,
@@ -329,7 +369,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18C278F02A77D1E000F1F0AE /* Build configuration list for PBXNativeTarget "SleepingIOSApp" */ = {
+		18C278F02A77D1E000F1F0AE /* Build configuration list for PBXNativeTarget "SleepingIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18C278F12A77D1E000F1F0AE /* Debug */,
@@ -339,6 +379,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18C278F32A77D20B00F1F0AE /* XCRemoteSwiftPackageReference "Glaip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maurovz/Glaip.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18C278F42A77D20B00F1F0AE /* Glaip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18C278F32A77D20B00F1F0AE /* XCRemoteSwiftPackageReference "Glaip" */;
+			productName = Glaip;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18C278DA2A77D1DF00F1F0AE /* Project object */;
 }
