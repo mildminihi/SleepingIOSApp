@@ -15,7 +15,7 @@ struct LoginView: View {
     self.glaip = Glaip(
       title: "Glaip Demo App",
       description: "Demo app to demonstrate Web3 login",
-      supportedWallets: [.Rainbow])
+      supportedWallets: [.Rainbow, .MetaMask])
   }
 
 
